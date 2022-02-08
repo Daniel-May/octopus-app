@@ -11,3 +11,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App-wrapper {
+  border: 1px solid white;
+  background-color: #050f2a;
+  width: 30%;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+.App-top {
+  display: flex;
+ 
+}
+
+.App-top > img {
+  height: 25px;
+  padding: 5px;
+}
+
+.push {
+  margin-left: auto;
+}
+
