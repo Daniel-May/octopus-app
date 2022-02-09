@@ -12,17 +12,19 @@ function App() {
             <img src={logo} alt="octopus logo"></img>
             <img src={basket} class="push" alt="basket"></img>
           </div>
+          <div class="product-image">
+            <img src={lightbulb} alt="lightbulb"></img>
+          </div>
         </header>
 
         <section class="product-header">
-          <img src={lightbulb} alt="lightbulb"></img>
           <h2>Energy saving light bulb</h2>
           <p>25W // Packet of 4</p>
         </section>
 
         <section class="add-to-cart">
           <h3>12.99</h3>
-          <button>Add to Cart</button>
+          <button id="add-to-cart-button">Add to Cart</button>
         </section>
 
         <section class="description">
@@ -34,6 +36,7 @@ function App() {
         </section>
 
         <section class="specifications">
+          <h3>Specifications</h3>
           <table>
             <tr>
               <th>Brand</th>
