@@ -48,11 +48,9 @@
   color: #36598d;
 }
 
+
 .add-to-cart > h3 {
-  text-align: left;
   color: white;
-  padding: 35px;
-  margin: 0;
   font-size: 42px;
 }
 
@@ -70,6 +68,10 @@
 .specifications {
   color: white;
   padding: 30px;
+}
+
+.specifications > h3, .description > h3 {
+  font-size: 28px;
 }
 
 th,td {
@@ -98,4 +100,68 @@ footer {
   color: #8b9fbe;
 }
 
+.quant-div {
+  display: flex;
+  text-align: center;
+  width: 100%;
+}
 
+.product-value {
+  width: 50%;
+  color: white;
+  font-size: 40px;
+}
+
+.button__wrapper {
+  display: flex;
+  font-size: 40px;
+  color: white;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  
+ }
+
+.button__wrapper > button {
+  color: white;
+  background-color: #1a2a43;
+  border: none;
+  border-radius: 5px;
+  font-size: 40px;
+  height: 50px;
+  margin: 10px;
+  padding: 5px;
+  
+
+}
+
+.button__wrapper > button:hover {
+  background-color: #36598d;
+  transition: 0.3s;
+}
+
+.button__wrapper > h4 {
+  height: 50px;
+  margin: 0;
+  padding: 2px;
+  color: white;
+}
+
+#modal {
+display: none;
+position: absolute;
+margin-left: auto;
+margin-right: auto;
+margin-top: 250px;
+top: 0;
+left: 0;
+right: 0;
+text-align: center;
+z-index: 5000;
+width: 25%;
+border: 3px solid #fb1a7b;
+background-color: #050f2a;
+color: white;
+
+
+}

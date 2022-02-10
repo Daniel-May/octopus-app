@@ -2,6 +2,7 @@ import logo from './assets/logo.svg';
 import basket from './assets/basket.svg';
 import lightbulb from './assets/images/lightbulb.png';
 import './App.css';
+import Quantity from './components/quantity';
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
         <header className="App-header">
           <div class="App-top">
             <img src={logo} alt="octopus logo"></img>
-            <img src={basket} class="push" alt="basket"></img>
+            <img id="basket" src={basket} class="push" alt="basket"></img>
           </div>
           <div class="product-image">
             <img src={lightbulb} alt="lightbulb"></img>
@@ -23,7 +24,12 @@ function App() {
         </section>
 
         <section class="add-to-cart">
-          <h3>12.99</h3>
+            <div class="quant-div">
+              <div class="product-value">
+              <h3>12.99</h3>
+              </div>
+              <Quantity/>
+            </div>
           <button id="add-to-cart-button">Add to Cart</button>
         </section>
 
@@ -67,6 +73,9 @@ function App() {
           <p>Trading office: 20-24 Broadwick Street, London, W1F 8HT</p>
         </footer>
 
+      </div>
+      <div id="modal">
+        
       </div>
     </div>
   );
